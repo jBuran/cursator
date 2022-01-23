@@ -8,41 +8,127 @@
    <title>Cursator</title>
    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-   <header class="header">
+   <header class="header1">
       <div class="container">
-         <div class="header__content">
-            <div class="header__logo">
+         <div class="header1__content">
+            <div class="header1__logo">
                <a href="./index.html">
                   <img src="./img/logo.svg" alt="logo">
                </a>
             </div>
-            <nav class="header__nav">
-               <ul class="header__list">
-                  <li class="header__item header-activ ">
-                     <a class="header__link " href="#">Все курсы</a>
+            <nav class="header1__nav">
+               <ul class="header1__list">
+                  <li class="header1__item header1-activ ">
+                     <a class="header1__link " href="./curse.html">Все курсы</a>
                      <img src="./img/Path.svg" alt="">
                   </li>
-                  <li class="header__item">
-                     <a class="header__link" href="#">Тест на профессию</a>
+                  <li class="header1__item">
+                     <a class="header1__link" href="./pg4.html">Факультет веб-разработки</a>
                   </li>
-                  <li class="header__item">
-                     <a class="header__link" href="#">Акции</a>
+                  <li class="header1__item">
+                     <a class="header1__link" href="#">Акции</a>
                   </li>
-                  <li class="header__item">
-                     <a class="header__link" href="#">Отзывы</a>
+                  <li class="header1__item">
+                     <a class="header1__link" href="#">Отзывы</a>
                   </li>
                </ul>
             </nav>
          </div>
-         <div class="header__nav-link">
-            <a href="./index.html">Главная</a>
-            <img src="./img/Arrow Pink.svg" alt="">
-            <a href="#">Курсы</a>
-         </div>
       </div>
    </header>
+   <header class="header">
+      <div class="container">
+         <div class="header1__content">
+            <div class="header1__logo">
+               <a href="./index.html">
+                  <img src="./img/logo.svg" alt="logo">
+               </a>
+            </div>
+            <div class="container header__wrap">
+               <nav class="header__menu header-menu">
+                  <img class="header-menu__logo" src="img/apple_logo_black.svg" alt="">
+                  <ul class="header-menu__list">
+                     <li class="header-menu__item"><a href="./curse.html">Все курсы</a></li>
+                     <li class="header-menu__item"><a href="./pg4.html">Факультет веб-разработки</a></li>
+                     <li class="header-menu__item"><a href="#characteristics">Акции</a></li>
+                     <li class="header-menu__item"><a href="#cross-sell">Отзывы</a></li>
+
+                  </ul>
+                  <div class="header-menu__burger"></div>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <style>
+         .header-menu__item {
+            margin-top: 20px;
+         }
+
+         .amenu__item {
+            word-wrap: normal;
+         }
+
+         .header-menu__item a {
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 142.5%;
+            color: #000000;
+         }
+
+         .amenu__burger-btn {
+            margin-left: 320px;
+         }
+
+         .amenu__burger {
+            position: relative;
+         }
+
+         .amenu__burger-open .amenu__burger-list {
+            display: block;
+         }
+
+         .amenu__burger-btn {
+            display: none;
+            width: 24px;
+            height: 24px;
+            border: none;
+            cursor: pointer;
+            background-size: contain;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg id='Capa_1' enable-background='new 0 0 551.13 551.13' height='512' viewBox='0 0 551.13 551.13' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='path-1_20_' d='m275.565 137.783c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.892 68.891-68.892 37.995 0 68.891 30.897 68.891 68.891 0 37.995-30.896 68.892-68.891 68.892zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6)'/%3E%3Cpath id='path-1_19_' d='m275.565 344.456c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.891 68.891-68.891 37.995 0 68.891 30.897 68.891 68.891 0 37.995-30.896 68.891-68.891 68.891zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6 6)'/%3E%3Cpath id='path-1_18_' d='m275.565 551.13c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.891 68.891-68.891 37.995 0 68.891 30.897 68.891 68.891s-30.896 68.891-68.891 68.891zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6 12)'/%3E%3C/svg%3E");
+            transition: background-image 300ms;
+         }
+
+         .amenu__burger-btn.amenu__burger-btn_active {
+            display: block;
+         }
+
+
+         .amenu__burger-btn:hover {
+            background-image: url("data:image/svg+xml,%3Csvg id='Capa_1' enable-background='new 0 0 515.555 515.555' height='512' viewBox='0 0 515.555 515.555' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3Cpath d='m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3Cpath d='m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3C/svg%3E");
+         }
+
+         .amenu__burger-list {
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid black;
+            list-style: none;
+            display: none;
+            padding: 30px;
+            z-index: 9;
+         }
+      </style>
+   </header>
    <main>
+
       <section class="email">
          <div class="container">
             <div class="email__content">
@@ -61,8 +147,335 @@
             </div>
          </div>
       </section>
+      <section class="filter">
+         <div class="container">
+            <h2 class="filter__title">Курсы с фильтрами</h2>
+            <div class="filter-search">
+               <input class="filter-search__keywords" type="text" placeholder="Ключевые слова">
+               <div class="filter-search__border"></div>
+               <div class="filter__profile">
+                  <span class="filter-search__choice">Программирование</span>
+                  <img src="./img/arrowblack.svg" alt="">
+               </div>
+            </div>
+            <div class="filter-text">
+               <span>Цена</span>
+               <span>ОТОБРАЖАЮТСЯ 1-11 ИЗ 241 РЕЗУЛЬТАТОВ</span>
+               <div>
+                  <span>СОРТИРОВАТЬ ПО:</span>
+                  <p>РЕЛЕВАНТНОСТИ</p>
+                  <img src="./img/arrowblack.svg" alt="">
+               </div>
+            </div>
+            <div class="filter__mainrow">
+               <div class="filter__content">
+                  <div class="filter-content__row">
+                     <div class="filter-filters">
+                        <div class="filter-filters__row">
+                           <div class="filter-filters__price">
+                              <input type="number" placeholder="0">
+                              <img src="./img/rubles.svg" alt="">
+                           </div>
+                           <div class="filter-filters__price">
+                              <input type="number" placeholder="10000">
+                              <img src="./img/rubles.svg" alt="">
+                           </div>
+                        </div>
+                        <img src="./img/range.svg" alt="">
+                     </div>
+                     <h6 class="filter__credit">Рассрочка</h6>
+                     <div class="filter-filters">
+                        <div class="filter-filters__row">
+                           <div class="filter-filters__price">
+                              <input type="number" placeholder="0">
+                              <img src="./img/rubles.svg" alt="">
+                           </div>
+                           <div class="filter-filters__price">
+                              <input type="number" placeholder="10000">
+                              <img src="./img/rubles.svg" alt="">
+                           </div>
+                        </div>
+                        <img src="./img/range.svg" alt="">
+                     </div>
+                     <h6 class="filter__credit">Школа</h6>
+                     <form action="">
+                        <label for="">
+                           <input type="checkbox">
+                           <span>City busines school</span>
+                        </label>
+                        <label for="">
+                           <input type="checkbox">
+                           <span>City busines school</span>
+                        </label>
+                        <label for="">
+                           <input type="checkbox">
+                           <span>City busines school</span>
+                        </label>
+                        <label for="">
+                           <input type="checkbox">
+                           <span>City busines school</span>
+                        </label>
+                        <label for="">
+                           <input type="checkbox">
+                           <span>City busines school</span>
+                        </label>
+                        <label for="">
+                           <input type="checkbox">
+                           <span>City busines school</span>
+                        </label>
+                     </form>
+                     <h6 class="filter__start">Начало</h6>
+                     <div class="filter-filters__begin">
+                        <input type="number" placeholder="Выберите дату">
+                        <img src="./img/calendar.svg" alt="">
+                     </div>
+                  </div>
+               </div>
+               <div class="filter__blocks">
+                  <div class="filter__col">
+                     <div class="filter-item">
+                        <div class="filter-item__header">
+                           <img src="./img/python.svg" alt="">
+                        </div>
+                        <div class="filter-item__bottom">
+                           <div class="filter-item__row">
+                              <h5 class="filter-item__title">Веб-разработчик</h5>
+                              <div class="filter-item__rating">
+                                 <img src="./img/star.svg" alt="">
+                                 <p>4.9<span>(122)</span></p>
+                              </div>
+                           </div>
+                           <div class="filter-item__description">
+                              <p>Начало:<span> 17.08.2021</span></p>
+                              <p>Длительность:<span> 8 месяцев</span></p>
+                              <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                              <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                              <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                    одногруппниками.
+                                    После обучение все студенты проходят стажировку</span></p>
+                           </div>
+                           <div class="filter-item__price">
+                              <div>
+                                 <img src="./img/coins.svg" alt="">
+                                 <span>17 150 ₽ / курс</span>
+                              </div>
+                              <p>От 2 777 ₽/мес</p>
+                           </div>
+                        </div>
+                        <button>
+                           <a href="" class="filter-item__link">Курс на gb.ru</a>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="filter__col">
+                     <div class="filter-item">
+                        <div class="filter-item__header">
+                           <img src="./img/python.svg" alt="">
+                        </div>
+                        <div class="filter-item__bottom">
+                           <div class="filter-item__row">
+                              <h5 class="filter-item__title">Веб-разработчик</h5>
+                              <div class="filter-item__rating">
+                                 <img src="./img/star.svg" alt="">
+                                 <p>4.9<span>(122)</span></p>
+                              </div>
+                           </div>
+                           <div class="filter-item__description">
+                              <p>Начало:<span> 17.08.2021</span></p>
+                              <p>Длительность:<span> 8 месяцев</span></p>
+                              <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                              <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                              <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                    одногруппниками.
+                                    После обучение все студенты проходят стажировку</span></p>
+                           </div>
+                           <div class="filter-item__price">
+                              <div>
+                                 <img src="./img/coins.svg" alt="">
+                                 <span>17 150 ₽ / курс</span>
+                              </div>
+                              <p>От 2 777 ₽/мес</p>
+                           </div>
+                        </div>
+                        <button>
+                           <a href="" class="filter-item__link">Курс на gb.ru</a>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="filter__col">
+                     <div class="filter-item">
+                        <div class="filter-item__header">
+                           <img src="./img/python.svg" alt="">
+                        </div>
+                        <div class="filter-item__bottom">
+                           <div class="filter-item__row">
+                              <h5 class="filter-item__title">Веб-разработчик</h5>
+                              <div class="filter-item__rating">
+                                 <img src="./img/star.svg" alt="">
+                                 <p>4.9<span>(122)</span></p>
+                              </div>
+                           </div>
+                           <div class="filter-item__description">
+                              <p>Начало:<span> 17.08.2021</span></p>
+                              <p>Длительность:<span> 8 месяцев</span></p>
+                              <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                              <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                              <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                    одногруппниками.
+                                    После обучение все студенты проходят стажировку</span></p>
+                           </div>
+                           <div class="filter-item__price">
+                              <div>
+                                 <img src="./img/coins.svg" alt="">
+                                 <span>17 150 ₽ / курс</span>
+                              </div>
+                              <p>От 2 777 ₽/мес</p>
+                           </div>
+                        </div>
+                        <button>
+                           <a href="" class="filter-item__link">Курс на gb.ru</a>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="filter__col">
+                     <div class="filter-item">
+                        <div class="filter-item__header">
+                           <img src="./img/python.svg" alt="">
+                        </div>
+                        <div class="filter-item__bottom">
+                           <div class="filter-item__row">
+                              <h5 class="filter-item__title">Веб-разработчик</h5>
+                              <div class="filter-item__rating">
+                                 <img src="./img/star.svg" alt="">
+                                 <p>4.9<span>(122)</span></p>
+                              </div>
+                           </div>
+                           <div class="filter-item__description">
+                              <p>Начало:<span> 17.08.2021</span></p>
+                              <p>Длительность:<span> 8 месяцев</span></p>
+                              <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                              <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                              <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                    одногруппниками.
+                                    После обучение все студенты проходят стажировку</span></p>
+                           </div>
+                           <div class="filter-item__price">
+                              <div>
+                                 <img src="./img/coins.svg" alt="">
+                                 <span>17 150 ₽ / курс</span>
+                              </div>
+                              <p>От 2 777 ₽/мес</p>
+                           </div>
+                        </div>
+                        <button>
+                           <a href="" class="filter-item__link">Курс на gb.ru</a>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="filter__col">
+                     <div class="filter-item">
+                        <div class="filter-item__header">
+                           <img src="./img/python.svg" alt="">
+                        </div>
+                        <div class="filter-item__bottom">
+                           <div class="filter-item__row">
+                              <h5 class="filter-item__title">Веб-разработчик</h5>
+                              <div class="filter-item__rating">
+                                 <img src="./img/star.svg" alt="">
+                                 <p>4.9<span>(122)</span></p>
+                              </div>
+                           </div>
+                           <div class="filter-item__description">
+                              <p>Начало:<span> 17.08.2021</span></p>
+                              <p>Длительность:<span> 8 месяцев</span></p>
+                              <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                              <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                              <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                    одногруппниками.
+                                    После обучение все студенты проходят стажировку</span></p>
+                           </div>
+                           <div class="filter-item__price">
+                              <div>
+                                 <img src="./img/coins.svg" alt="">
+                                 <span>17 150 ₽ / курс</span>
+                              </div>
+                              <p>От 2 777 ₽/мес</p>
+                           </div>
+                        </div>
+                        <button>
+                           <a href="" class="filter-item__link">Курс на gb.ru</a>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="filter__col">
+                     <div class="filter-item">
+                        <div class="filter-item__header">
+                           <img src="./img/python.svg" alt="">
+                        </div>
+                        <div class="filter-item__bottom">
+                           <div class="filter-item__row">
+                              <h5 class="filter-item__title">Веб-разработчик</h5>
+                              <div class="filter-item__rating">
+                                 <img src="./img/star.svg" alt="">
+                                 <p>4.9<span>(122)</span></p>
+                              </div>
+                           </div>
+                           <div class="filter-item__description">
+                              <p>Начало:<span> 17.08.2021</span></p>
+                              <p>Длительность:<span> 8 месяцев</span></p>
+                              <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                              <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                              <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                    одногруппниками.
+                                    После обучение все студенты проходят стажировку</span></p>
+                           </div>
+                           <div class="filter-item__price">
+                              <div>
+                                 <img src="./img/coins.svg" alt="">
+                                 <span>17 150 ₽ / курс</span>
+                              </div>
+                              <p>От 2 777 ₽/мес</p>
+                           </div>
+                        </div>
+                        <button>
+                           <a href="" class="filter-item__link">Курс на gb.ru</a>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="salary">
+         <div class="container">
+            <div class="salary__title">
+               <h5 class="salary__name-first">Зарплаты и вакансии программистов</h5>
+               <img class="salary__logo" src="img/superjob.png.jpg" alt="superjob_logo">
+            </div>
+            <p class="salary__vacancy">Новые вакансии:</p>
+            <div class="salary__items">
+               <p class="salary__name">Senior Java разработчик / Team Lead</p>
+               <span>до 400 000 руб. (КонсалтПро)</span>
+               <button class="salary__btn"><img src="./img/Arrow osvg.svg" alt="arrowup"></button>
+            </div>
+            <div class="salary__items">
+               <p class="salary__name">Senior Java разработчик / Team Lead</p>
+               <span>до 400 000 руб. (КонсалтПро)</span>
+               <button class="salary__btn"><img src="./img/Arrow osvg.svg" alt="arrowup"></button>
+            </div>
+            <div class="salary__items">
+               <p class="salary__name">Senior Java разработчик / Team Lead</p>
+               <span>до 400 000 руб. (КонсалтПро)</span>
+               <button class="salary__btn"><img src="./img/Arrow osvg.svg" alt="arrowup"></button>
+            </div>
+            <button class="salary__big-btn">
+               <a class="salary__link" href="#">ПОКАЗАТЬ ЕЩЕ</a>
+            </button>
+         </div>
+      </section>
    </main>
-   <!-- <footer class="footer">
+   <footer class="footer">
+
       <div class="container">
          <div class="footer__wrap">
             <img class="footer__logo" src="img/logo.svg" alt="cursator">
@@ -128,7 +541,8 @@
          </div>
 
       </div>
-   </footer> -->
+   </footer>
+   <script src="./amenu/amenu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+.schools {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   &__title {
+       font-style: normal;
+       font-weight: 600;
+       font-size: 28px;
+       line-height: 34px;
+       color: #000000;
+       margin-bottom: 30px;
+   }
+   &-item {
+       background: #ffffff;
+       border: 1px solid #dedede;
+       box-sizing: border-box;
+       border-radius: 13px;
+       width: 24%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 45px 0;
+   }
+   &__row {
+       display: flex;
+       margin-bottom: 15px;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+}

@@ -7,194 +7,542 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Cursator</title>
    <link rel="stylesheet" href="./css/index.css">
+   <link rel="stylesheet" href="./amenu/amenu.css">
 </head>
 
 <body>
-   <header class="header">
+   <header class="header1">
       <div class="container">
-         <div class="header__content">
-            <div class="header__logo">
+         <div class="header1__content">
+            <div class="header1__logo">
                <a href="./index.html">
                   <img src="./img/logo.svg" alt="logo">
                </a>
             </div>
-            <nav class="header__nav">
-               <ul class="header__list">
-                  <li class="header__item header-activ ">
-                     <a class="header__link " href="./curse.html">Все курсы</a>
+            <nav class="header1__nav">
+               <ul class="header1__list">
+                  <li class="header1__item header1-activ ">
+                     <a class="header1__link " href="./curse.html">Все курсы</a>
                      <img src="./img/Path.svg" alt="">
                   </li>
-                  <li class="header__item">
-                     <a class="header__link" href="#">Тест на профессию</a>
+                  <li class="header1__item">
+                     <a class="header1__link" href="#">Тест на профессию</a>
                   </li>
-                  <li class="header__item">
-                     <a class="header__link" href="#">Акции</a>
+                  <li class="header1__item">
+                     <a class="header1__link" href="#">Акции</a>
                   </li>
-                  <li class="header__item">
-                     <a class="header__link" href="#">Отзывы</a>
+                  <li class="header1__item">
+                     <a class="header1__link" href="#">Отзывы</a>
                   </li>
                </ul>
             </nav>
          </div>
       </div>
    </header>
-   <section class="hero">
+   <header class="header">
       <div class="container">
-         <div class="hero__content">
-            <h1 class="hero__title">Найди подходящий курс</h1>
-            <p class="hero__text">Мы — агрегатор-отзовик курсов. Выбирайте курсы по стоимости, длительности, дате начала
-               и другим параметрам!</p>
-            <div class="hero__bot">
-               <button>
-                  ПРОЙТИ ТЕСТ
-               </button>
-               <span>
-                  Не уверены, какую <a href="#"> профессию</a> выбрать?
-               </span>
+         <div class="header1__content">
+            <div class="header1__logo">
+               <a href="./index.html">
+                  <img src="./img/logo.svg" alt="logo">
+               </a>
+            </div>
+            <div class="container header__wrap">
+               <nav class="header__menu header-menu">
+                  <img class="header-menu__logo" src="img/apple_logo_black.svg" alt="">
+                  <ul class="header-menu__list">
+                     <li class="header-menu__item"><a href="./curse.html">Все курсы</a></li>
+                     <li class="header-menu__item"><a href="#card">Тест на профессию</a></li>
+                     <li class="header-menu__item"><a href="#characteristics">Акции</a></li>
+                     <li class="header-menu__item"><a href="#cross-sell">Отзывы</a></li>
+
+                  </ul>
+                  <div class="header-menu__burger"></div>
+               </nav>
             </div>
          </div>
-
       </div>
-      <img class="hero__img" src="./img/banner.jpg" alt="">
-   </section>
-   <div class="container">
-      <section class="directions">
-         <h2 class="directions__title">Направления курсов</h2>
-         <div class="directions__row">
-            <div class="col-6">
-               <div class="directions-item">
-                  <div class="directions-item__box">
-                     <span class="directions-item__amount">300 курсов</span>
-                     <h3 class="direction-item__title">Программирование</h3>
-                  </div>
-                  <img class="directions-item__img" src="./img/programmer.svg" alt="">
+      <style>
+         .header-menu__item {
+            margin-top: 20px;
+         }
+
+         .amenu__item {
+            word-wrap: normal;
+         }
+
+         .header-menu__item a {
+
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 142.5%;
+            color: #000000;
+         }
+
+         .amenu__burger-btn {
+            margin-left: 320px;
+         }
+
+         .amenu__burger {
+            position: relative;
+         }
+
+         .amenu__burger-open .amenu__burger-list {
+            display: block;
+         }
+
+         .amenu__burger-btn {
+            display: none;
+            width: 24px;
+            height: 24px;
+            border: none;
+            cursor: pointer;
+            background-size: contain;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg id='Capa_1' enable-background='new 0 0 551.13 551.13' height='512' viewBox='0 0 551.13 551.13' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath id='path-1_20_' d='m275.565 137.783c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.892 68.891-68.892 37.995 0 68.891 30.897 68.891 68.891 0 37.995-30.896 68.892-68.891 68.892zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6)'/%3E%3Cpath id='path-1_19_' d='m275.565 344.456c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.891 68.891-68.891 37.995 0 68.891 30.897 68.891 68.891 0 37.995-30.896 68.891-68.891 68.891zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6 6)'/%3E%3Cpath id='path-1_18_' d='m275.565 551.13c-37.995 0-68.891-30.897-68.891-68.891 0-37.995 30.897-68.891 68.891-68.891 37.995 0 68.891 30.897 68.891 68.891s-30.896 68.891-68.891 68.891zm0-103.337c-18.989 0-34.446 15.457-34.446 34.446s15.457 34.446 34.446 34.446 34.446-15.457 34.446-34.446-15.457-34.446-34.446-34.446z' transform='translate(6 12)'/%3E%3C/svg%3E");
+            transition: background-image 300ms;
+         }
+
+         .amenu__burger-btn.amenu__burger-btn_active {
+            display: block;
+         }
+
+
+         .amenu__burger-btn:hover {
+            background-image: url("data:image/svg+xml,%3Csvg id='Capa_1' enable-background='new 0 0 515.555 515.555' height='512' viewBox='0 0 515.555 515.555' width='512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m303.347 18.875c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3Cpath d='m303.347 212.209c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3Cpath d='m303.347 405.541c25.167 25.167 25.167 65.971 0 91.138s-65.971 25.167-91.138 0-25.167-65.971 0-91.138c25.166-25.167 65.97-25.167 91.138 0'/%3E%3C/svg%3E");
+         }
+
+         .amenu__burger-list {
+            position: absolute;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid black;
+            list-style: none;
+            display: none;
+            padding: 30px;
+            z-index: 9;
+         }
+      </style>
+   </header>
+
+
+   <main>
+      <section class="hero">
+         <div class="container">
+            <div class="hero__content">
+               <h1 class="hero__title">Найди подходящий курс</h1>
+               <p class="hero__text">Мы — агрегатор-отзовик курсов. Выбирайте курсы по стоимости, длительности, дате
+                  начала
+                  и другим параметрам!</p>
+               <div class="hero__bot">
+                  <button>
+                     ПРОЙТИ ТЕСТ
+                  </button>
+                  <span>
+                     Не уверены, какую <a href="#"> профессию</a> выбрать?
+                  </span>
                </div>
             </div>
-            <div class="col-6">
-               <div class="directions-item">
-                  <div class="directions-item__box">
-                     <span class="directions-item__amount">300 курсов</span>
-                     <h3 class="direction-item__title">Управление</h3>
+         </div>
+         <img class="hero__img" src="./img/banner.jpg" alt="">
+      </section>
+      <div class="container">
+         <section class="directions">
+            <h2 class="directions__title">Направления курсов</h2>
+            <div class="directions__row">
+               <div class="col-6">
+                  <div class="directions-item">
+                     <div class="directions-item__box">
+                        <span class="directions-item__amount">300 курсов</span>
+                        <h3 class="direction-item__title">Программирование</h3>
+                     </div>
+                     <img class="directions-item__img" src="./img/programmer.svg" alt="">
                   </div>
-                  <img class="directions-item__img" src="./img/team.svg" alt="">
+               </div>
+               <div class="col-6">
+                  <div class="directions-item">
+                     <div class="directions-item__box">
+                        <span class="directions-item__amount">300 курсов</span>
+                        <h3 class="direction-item__title">Управление</h3>
+                     </div>
+                     <img class="directions-item__img" src="./img/team.svg" alt="">
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="directions-item">
+                     <div class="directions-item__box">
+                        <span class="directions-item__amount">300 курсов</span>
+                        <h3 class="direction-item__title">Дизайн</h3>
+                     </div>
+                     <img class="directions-item__img" src="./img/designer.svg" alt="">
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="directions-item">
+                     <div class="directions-item__box">
+                        <span class="directions-item__amount">300 курсов</span>
+                        <h3 class="direction-item__title">Маркетинг</h3>
+                     </div>
+                     <img class="directions-item__img" src="./img/marketing.svg" alt="">
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="directions-item">
+                     <div class="directions-item__box">
+                        <span class="directions-item__amount">300 курсов</span>
+                        <h3 class="direction-item__title">Аналитика</h3>
+                     </div>
+                     <img class="directions-item__img" src="./img/analytics.svg" alt="">
+                  </div>
+               </div>
+               <div class="col-6">
+                  <div class="directions-item">
+                     <div class="directions-item__box">
+                        <span class="directions-item__amount">300 курсов</span>
+                        <h3 class="direction-item__title">Создание контента</h3>
+                     </div>
+                     <img class="directions-item__img" src="./img/content.svg" alt="">
+                  </div>
                </div>
             </div>
-            <div class="col-6">
-               <div class="directions-item">
-                  <div class="directions-item__box">
-                     <span class="directions-item__amount">300 курсов</span>
-                     <h3 class="direction-item__title">Дизайн</h3>
-                  </div>
-                  <img class="directions-item__img" src="./img/designer.svg" alt="">
+         </section>
+      </div>
+      <section class="schools">
+         <div class="container">
+            <h2 class="schools__title">Топ школ</h2>
+            <div class="schools__row">
+               <div class="schools-item">
+                  <img src="./img/netologiya.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/skillbox.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/coursera.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/geekbrains.svg" alt="">
                </div>
             </div>
-            <div class="col-6">
-               <div class="directions-item">
-                  <div class="directions-item__box">
-                     <span class="directions-item__amount">300 курсов</span>
-                     <h3 class="direction-item__title">Маркетинг</h3>
-                  </div>
-                  <img class="directions-item__img" src="./img/marketing.svg" alt="">
+            <div class="schools__row">
+               <div class="schools-item">
+                  <img src="./img/netologiya.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/skillbox.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/coursera.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/geekbrains.svg" alt="">
                </div>
             </div>
-            <div class="col-6">
-               <div class="directions-item">
-                  <div class="directions-item__box">
-                     <span class="directions-item__amount">300 курсов</span>
-                     <h3 class="direction-item__title">Аналитика</h3>
-                  </div>
-                  <img class="directions-item__img" src="./img/analytics.svg" alt="">
+            <div class="schools__row">
+               <div class="schools-item">
+                  <img src="./img/netologiya.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/skillbox.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/coursera.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/geekbrains.svg" alt="">
                </div>
             </div>
-            <div class="col-6">
-               <div class="directions-item">
-                  <div class="directions-item__box">
-                     <span class="directions-item__amount">300 курсов</span>
-                     <h3 class="direction-item__title">Создание контента</h3>
-                  </div>
-                  <img class="directions-item__img" src="./img/content.svg" alt="">
+            <div class="schools__row">
+               <div class="schools-item">
+                  <img src="./img/netologiya.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/skillbox.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/coursera.svg" alt="">
+               </div>
+               <div class="schools-item">
+                  <img src="./img/geekbrains.svg" alt="">
                </div>
             </div>
          </div>
       </section>
-   </div>
-   <section class="email">
-      <div class="container">
-         <div class="email__content">
-            <div class="email__left">
-               <span class="email__span">Получайте все новости</span>
-               <h2 class="email__title">Подпишитесь на email рассылку</h2>
-               <form class="email__form">
-                  <input placeholder="Ваш email" type="text">
-                  <button>Подписаться</button>
-               </form>
+      <section class="courses">
+         <div class="container">
+            <div class="blog__wrap blog__prog">
+               <h3 class="blog__title">Топ курсов</h3>
+               <div class="blog__title-item">
+                  <a class="blog__title-link" href="#">Программирование</a>
+                  <img class="blog__title-img" src="img/Arrow P.svg" alt="arrowright">
+               </div>
             </div>
-            <div class="email__img">
-               <img  src="./img/dives.jpg" alt="">
+            <div class="courses__row">
+               <div class="courses__col">
+                  <div class="courses-item">
+                     <div class="courses-item__header">
+                        <img src="./img/python.svg" alt="">
+
+                        <div class="courses__span"> <span>Программирование</span>
+                           <span>Python</span>
+                           <span>Skillbox</span>
+                        </div>
+                     </div>
+                     <div class="courses-item__bottom">
+                        <div class="courses-item__row">
+                           <h5 class="courses-item__title">Веб-разработчик</h5>
+                           <div class="courses-item__rating">
+                              <img src="./img/star.svg" alt="">
+                              <p>4.9<span>(122)</span></p>
+                           </div>
+                        </div>
+                        <div class="courses-item__description">
+                           <p>Начало:<span> 17.08.2021</span></p>
+                           <p>Длительность:<span> 8 месяцев</span></p>
+                           <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                           <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                           <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                 одногруппниками.
+                                 После обучение все студенты проходят стажировку</span></p>
+                        </div>
+                        <div class="courses-item__price">
+                           <div>
+                              <img src="./img/coins.svg" alt="">
+                              <span>17 150 ₽ / курс</span>
+                           </div>
+                           <p>От 2 777 ₽/мес</p>
+                        </div>
+                     </div>
+                     <button>
+                        <a href="" class="courses-item__link">Курс на gb.ru</a>
+                     </button>
+                  </div>
+               </div>
+               <div class="courses__col">
+                  <div class="courses-item">
+                     <div class="courses-item__header">
+                        <img src="./img/python.svg" alt="">
+                        <div class="courses__span"> <span>Программирование</span>
+                           <span>Python</span>
+                           <span>Skillbox</span>
+                        </div>
+                     </div>
+                     <div class="courses-item__bottom">
+                        <div class="courses-item__row">
+                           <h5 class="courses-item__title">Веб-разработчик</h5>
+                           <div class="courses-item__rating">
+                              <img src="./img/star.svg" alt="">
+                              <p>4.9<span>(122)</span></p>
+                           </div>
+                        </div>
+                        <div class="courses-item__description">
+                           <p>Начало:<span> 17.08.2021</span></p>
+                           <p>Длительность:<span> 8 месяцев</span></p>
+                           <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                           <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                           <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                 одногруппниками.
+                                 После обучение все студенты проходят стажировку</span></p>
+                        </div>
+                        <div class="courses-item__price">
+                           <div>
+                              <img src="./img/coins.svg" alt="">
+                              <span>17 150 ₽ / курс</span>
+                           </div>
+                           <p>От 2 777 ₽/мес</p>
+                        </div>
+                     </div>
+                     <button>
+                        <a href="" class="courses-item__link">Курс на gb.ru</a>
+                     </button>
+                  </div>
+               </div>
+               <div class="courses__col">
+                  <div class="courses-item">
+                     <div class="courses-item__header">
+                        <img src="./img/python.svg" alt="">
+                        <div class="courses__span"> <span>Программирование</span>
+                           <span>Python</span>
+                           <span>Skillbox</span>
+                        </div>
+                     </div>
+                     <div class="courses-item__bottom">
+                        <div class="courses-item__row">
+                           <h5 class="courses-item__title">Веб-разработчик</h5>
+                           <div class="courses-item__rating">
+                              <img src="./img/star.svg" alt="">
+                              <p>4.9<span>(122)</span></p>
+                           </div>
+                        </div>
+                        <div class="courses-item__description">
+                           <p>Начало:<span> 17.08.2021</span></p>
+                           <p>Длительность:<span> 8 месяцев</span></p>
+                           <p>Занятия:<span> 2-3 занятия в неделю</span></p>
+                           <p>Формат:<span> онлайн-лекции, домашние задания с фидбеком от преподавателей</span></p>
+                           <p>Особенности:<span> постоянная практика, актуальная программа обучения, чат с
+                                 одногруппниками.
+                                 После обучение все студенты проходят стажировку</span></p>
+                        </div>
+                        <div class="courses-item__price">
+                           <div>
+                              <img src="./img/coins.svg" alt="">
+                              <span>17 150 ₽ / курс</span>
+                           </div>
+                           <p>От 2 777 ₽/мес</p>
+                        </div>
+                     </div>
+                     <button>
+                        <a href="" class="courses-item__link">Курс на gb.ru</a>
+                     </button>
+                  </div>
+               </div>
             </div>
          </div>
-      </div>
-   </section>
+      </section>
+      <section class="email">
+         <div class="container">
+            <div class="email__content">
+               <div class="email__left">
+                  <span class="email__span">Получайте все новости</span>
+                  <h2 class="email__title">Подпишитесь на email рассылку</h2>
+                  <form class="email__form">
+                     <input placeholder="Ваш email" type="text">
+                     <button>Подписаться</button>
+                  </form>
+               </div>
+               <div class="email__img">
+                  <img src="./img/dives.jpg" alt="">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="blog">
+         <div class="container">
+            <div class="blog__wrap">
+               <h3 class="blog__title">Блог</h3>
+               <div class="blog__title-item">
+                  <a class="blog__title-link" href="#">Смотреть все</a>
+                  <img class="blog__title-img" src="img/arrowright.svg" alt="arrowright">
+               </div>
+            </div>
+            <div class="blog__wrapper">
+               <div class="blog__item col-3">
+                  <img class="blog__img" src="img/blogimg.jpg" alt="blogimage">
+                  <p class="blog__name">Профессия «Python разработчик»</p>
+                  <span class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                     amet luctus</span>
+                  <div class="blog__link-items">
+                     <a class="blog__title-link" href="#">Читать</a>
+                     <img class="blog__icon" src="./img/arrowright.svg" alt="arrowright">
+                  </div>
+               </div>
+               <div class="blog__item col-3">
+                  <img class="blog__img" src="img/blogimg.jpg" alt="blogimage">
+                  <p class="blog__name">Профессия «Python разработчик»</p>
+                  <span class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                     amet luctus</span>
+                  <div class="blog__link-items">
+                     <a class="blog__title-link" href="#">Читать</a>
+                     <img class="blog__icon" src="./img/arrowright.svg" alt="arrowright">
+                  </div>
+               </div>
+               <div class="blog__item col-3">
+                  <img class="blog__img" src="img/blogimg.jpg" alt="blogimage">
+                  <p class="blog__name">Профессия «Python разработчик»</p>
+                  <span class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                     amet luctus</span>
+                  <div class="blog__link-items">
+                     <a class="blog__title-link" href="#">Читать</a>
+                     <img class="blog__icon" src="./img/arrowright.svg" alt="arrowright">
+                  </div>
+               </div>
+               <div class="blog__item col-3">
+                  <img class="blog__img" src="img/blogimg.jpg" alt="blogimage">
+                  <p class="blog__name">Профессия «Python разработчик»</p>
+                  <span class="blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit
+                     amet luctus</span>
+                  <div class="blog__link-items">
+                     <a class="blog__title-link" href="#">Читать</a>
+                     <img class="blog__icon" src="./img/arrowright.svg" alt="arrowright">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
    <footer class="footer">
-     <div class="container">
-      <div class="footer__wrap">
-     <img class="footer__logo" src="img/logo.svg" alt="cursator">
-      <div class="footer__icons">
-         <ul class="footer__list">
-            <li class="footer__item">
-               <a class="footer__link" target="_blank" href="https://web.telegram.org/z/"><img class="footer__img" src="./img/telegramm.svg" alt="telegram"></a>
-            </li>
-            <li class="footer__item">
-               <a class="footer__link" target="_blank" href="https://twitter.com/?lang=ru"><img class="footer__img" src="./img/twitter.svg" alt="twitter"></a>
-            </li>
-            <li class="footer__item">
-               <a class="footer__link" target="_blank" href="https://www.skype.com/ru/"><img class="footer__img" src="./img/skype.svg" alt="skype"></a>
-            </li> 
-            <li class="footer__item" 
-               <a class="footer__link" target="_blank" href="https://ok.ru/"><img class="footer__img" src="./img/ok.svg" alt="odnoklassniki"></a>
-            </li>
-            <li class="footer__item">
-               <a class="footer__link" target="_blank" href="https://ru-ru.facebook.com/"><img class="footer__img" src="./img/facebook.svg" alt="facebook"></a>
-            </li>
-            <li class="footer__item"> 
-               <a class="footer__link" target="_blank" href="https://vk.com/feed"><img class="footer__img" src="./img/vk.svg" alt="vkontakte"></a>
-            </li>
-            <li class="footer__item">
-               <a class="footer__link" target="_blank" href="https://web.whatsapp.com/"><img class="footer__img" src="./img/watsapp.svg" alt="whatsapp"></a>
-            </li> 
-            <li class="footer__item"> 
-               <a class="footer__link" target="_blank" href="https://www.viber.com/ru/"><img class="footer__img" src="./img/viber.svg" alt="viber"></a>
-            </li>
-   
-         </ul>
-      </div>
-      </div>
+      <div class="container">
+         <div class="footer__wrap">
+            <img class="footer__logo" src="img/logo.svg" alt="cursator">
+            <div class="footer__icons">
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <a class="footer__link" target="_blank" href="https://web.telegram.org/z/"><img class="footer__img"
+                           src="./img/telegramm.svg" alt="telegram"></a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" target="_blank" href="https://twitter.com/?lang=ru"><img
+                           class="footer__img" src="./img/twitter.svg" alt="twitter"></a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" target="_blank" href="https://www.skype.com/ru/"><img class="footer__img"
+                           src="./img/skype.svg" alt="skype"></a>
+                  </li>
+                  <li class="footer__item" <a class="footer__link" target="_blank" href="https://ok.ru/"><img
+                        class="footer__img" src="./img/ok.svg" alt="odnoklassniki"></a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" target="_blank" href="https://ru-ru.facebook.com/"><img class="footer__img"
+                           src="./img/facebook.svg" alt="facebook"></a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" target="_blank" href="https://vk.com/feed"><img class="footer__img"
+                           src="./img/vk.svg" alt="vkontakte"></a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" target="_blank" href="https://web.whatsapp.com/"><img class="footer__img"
+                           src="./img/watsapp.svg" alt="whatsapp"></a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" target="_blank" href="https://www.viber.com/ru/"><img class="footer__img"
+                           src="./img/viber.svg" alt="viber"></a>
+                  </li>
 
-      <nav class="footer__nav">
-         <ul class="footer__nav-list">
-         <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
-         <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
-         <li class="footer__nav-item"><a class="footer__nav-link" href="#">Отзывы о школах</a></li>
-         </ul>
-   <div class="footer__up">
-      <a class="footer__up-link" href="#">В начало</a>
-      <img class="footer__up-img" src="./img/arrowup.svg">
-   </div>
-      </nav>
+               </ul>
+            </div>
+         </div>
 
-     
-     <div class="footer__last">
-        <span class="footer__last-text">© 2021 coursator.online</span>
-        <div class="footer__last-policy">
-           
-           <a class="footer__last-link" href="#">Политика конфиденциальности</a> 
-           <a class="footer__last-link" href="#">Пользовательское соглашение</a>
+         <nav class="footer__nav">
+            <ul class="footer__nav-list">
+               <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
+               <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+               <li class="footer__nav-item"><a class="footer__nav-link" href="#">Отзывы о школах</a></li>
+            </ul>
+            <div class="footer__up">
+               <a class="footer__up-link" href="#">В начало</a>
+               <img class="footer__up-img" src="./img/arrowup.svg">
+            </div>
+         </nav>
 
-        </div>
-     </div>
+
+         <div class="footer__last">
+            <span class="footer__last-text">© 2021 coursator.online</span>
+            <div class="footer__last-policy">
+
+               <a class="footer__last-link" href="#">Политика конфиденциальности</a>
+               <a class="footer__last-link" href="#">Пользовательское соглашение</a>
+
+            </div>
+         </div>
 
       </div>
    </footer>
+
+   <script src="./amenu/amenu.js"></script>
 </body>
 
 </html>
