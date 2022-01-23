@@ -1,6 +1,6 @@
-@mixin font($size, $weight) {
+@mixin font($size, $weight, $line-height) {
     font-family: "Montserrat", sans-serif;
-    line-height: 150%;
+    line-height: $line-height;
     font-style: normal;
     font-size: $size;
     font-weight: $weight;

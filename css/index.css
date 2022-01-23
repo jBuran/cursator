@@ -97,6 +97,68 @@
   padding-bottom: 35px;
 }
 
+.blog {
+  margin-bottom: 125px;
+}
+
+.blog__wrapper {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+
+.blog__img {
+  margin-top: 38px;
+  margin-bottom: 17px;
+}
+
+.blog__title-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 129.9%;
+  color: #0075ff;
+}
+
+.blog__link-items {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.blog__icon {
+  margin-left: 9px;
+}
+
+.blog__name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.col-3 {
+  width: 24%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -188,11 +250,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__item a {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
+  font-family: Montserrat;
   font-style: normal;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
 }
 
 .header-activ {
@@ -210,4 +272,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.title {
+  font-size: 28px;
 }

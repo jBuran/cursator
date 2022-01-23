@@ -1,0 +1,53 @@
+.blog {
+  margin-bottom: 125px;
+  &__wrapper{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+  }
+  &__img {
+    margin-top: 38px;
+    margin-bottom: 17px;
+  }
+  
+  &__title-link {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 129.9%;
+    color: #0075ff;
+  }
+  &__link-items {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+  &__icon{
+    margin-left: 9px;
+  }
+  &__name{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 12px;
+  }
+}
+.col-3{
+  width: 24%;
+}
