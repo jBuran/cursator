@@ -1,0 +1,62 @@
+.salary{
+&__title{
+  display: flex;
+  justify-content: space-between;
+}
+&__logo{
+  width: 100px;
+  height:24px;
+}
+&__vacancy{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+&__items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border:1px solid #DCDCDC;
+  border-radius: 10px;
+  margin-top: 37px;
+  // padding:30px 0 31px 33px;
+
+}
+&__name{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140.9%;
+  color: #000000;
+}
+&__vacancy{
+  margin-top: 26px;
+}
+&__btn{
+  background: #0075FF;
+  box-shadow: 0px 4px 17px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding:31px;
+  height: 86px;
+  width:85px;
+}
+&__big-btn{
+  width:100%;
+  padding:33px 510px;
+  margin-top:19px;
+  background: #F7F7F7;
+  border-radius: 10px;
+}
+&__link{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+}
+}

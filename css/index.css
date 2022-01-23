@@ -1,21 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-.footer__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.salary__title {
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
+}
+
+.salary__logo {
+  width: 100px;
+  height: 24px;
+}
+
+.salary__vacancy {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.salary__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #DCDCDC;
+  border-radius: 10px;
+  margin-top: 37px;
+}
+
+.salary__name {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140.9%;
+  color: #000000;
+}
+
+.salary__vacancy {
+  margin-top: 26px;
+}
+
+.salary__btn {
+  background: #0075FF;
+  box-shadow: 0px 4px 17px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 31px;
+  height: 86px;
+  width: 85px;
+}
+
+.salary__big-btn {
+  width: 100%;
+  padding: 33px 510px;
+  margin-top: 19px;
+  background: #F7F7F7;
+  border-radius: 10px;
+}
+
+.salary__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 107px;
 }
 
 .footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .footer__item:not(:last-child) {
@@ -23,19 +82,13 @@
 }
 
 .footer__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 33px;
   border-bottom: 1px solid #D9D9D9;
 }
 
 .footer__nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 33px;
 }
@@ -45,12 +98,8 @@
 }
 
 .footer__up {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .footer__nav-link {
@@ -76,12 +125,8 @@
 }
 
 .footer__last {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .footer__last-link {
@@ -188,7 +233,6 @@
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -257,47 +301,36 @@ h1, h2, h3, h4, h5, h6 {
 .directions {
   background: #ffffff;
   border: 1px solid #dcdcdc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05);
   border-radius: 37px;
   padding: 30px 45px;
 }
 
 .directions__title {
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
+  font-family: Montserrat;
   font-style: normal;
-  font-size: 28px;
   font-weight: 600;
-  color: #000;
+  font-size: 28px;
+  line-height: 68px;
+  color: #000000;
   margin-bottom: 30px;
 }
 
 .directions__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: -15px;
 }
 
 .directions-item {
   background: rgba(0, 0, 0, 0.03);
   border-radius: 19px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 15px 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 15px;
   height: 203px;
 }
@@ -317,12 +350,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .directions-item__box {
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
+  font-family: Montserrat;
   font-style: normal;
-  font-size: 18px;
   font-weight: 500;
-  color: #000;
+  font-size: 18px;
+  line-height: 68px;
+  color: #000000;
 }
 
 .header {
@@ -332,24 +365,14 @@ h1, h2, h3, h4, h5, h6 {
 .header__content {
   margin-top: 38px;
   padding-bottom: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   align-items: center;
 }
 
@@ -363,26 +386,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .header__item a {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
+  font-family: Montserrat;
   font-style: normal;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
   color: #000;
 }
 
 .header-activ {
   border: 1px solid #0075ff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 70px;
   padding: 14px 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header-activ a {
@@ -392,15 +410,9 @@ h1, h2, h3, h4, h5, h6 {
 .header__nav-link {
   margin-top: 20px;
   max-width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav-link a {
@@ -432,11 +444,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__title {
-  font-family: "Montserrat", sans-serif;
-  line-height: 150%;
+  font-family: Montserrat;
   font-style: normal;
-  font-size: 68px;
   font-weight: 700;
+  font-size: 68px;
   color: #000;
   line-height: 68px;
 }
@@ -454,12 +465,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__bot {
   margin-top: 45px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .hero__bot button {
@@ -499,17 +506,11 @@ h1, h2, h3, h4, h5, h6 {
 .email__content {
   background: #ffffff;
   border: 1px solid #dcdcdc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 38px rgba(0, 0, 0, 0.05);
   border-radius: 31px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .email__left {
@@ -540,12 +541,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .email__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 70px;
   border-radius: 14px;
   background: #dddcdc;
@@ -597,12 +594,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .email__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 22px 40px;
   background: #0075ff;
   border-radius: 0px 11px 11px 11px;
@@ -628,24 +621,14 @@ h1, h2, h3, h4, h5, h6 {
 .header__content {
   margin-top: 38px;
   padding-bottom: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   align-items: center;
 }
 
@@ -662,26 +645,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
-<<<<<<< HEAD
   font-size: 16px;
   line-height: 34px;
-=======
   color: #000;
->>>>>>> 94f58927563ee880175fd824defe7c3d278357f3
 }
 
 .header-activ {
   border: 1px solid #0075ff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 70px;
   padding: 14px 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .header-activ a {
@@ -691,15 +666,9 @@ h1, h2, h3, h4, h5, h6 {
 .header__nav-link {
   margin-top: 20px;
   max-width: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav-link a {
@@ -721,11 +690,6 @@ body {
   padding: 0 15px;
 }
 
-<<<<<<< HEAD
-.title {
-  font-size: 28px;
-}
-=======
 .col-6 {
   width: 50%;
   font-family: "Montserrat", sans-serif;
@@ -736,5 +700,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-/*# sourceMappingURL=index.css.map */
->>>>>>> 94f58927563ee880175fd824defe7c3d278357f3
+
+.title {
+  font-size: 28px;
+}
