@@ -3,12 +3,19 @@
 @import "./components/zero";
 @import "./mixins/mixins";
 @import "./section/direction";
+@import "./section/header";
+@import "./section/hero";
+@import "./section/email";
 
 body {
     font-family: "Montserrat", sans-serif;
 }
-.container{
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0 15px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.col-6 {
+    width: 50%;
 }
