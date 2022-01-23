@@ -174,3 +174,40 @@ color: #000000;
 
   }
 }
+
+.freecourse{
+  &__title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 68px;
+    color: #000000;
+  }
+  &__wrap{
+    margin-top:16px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #DCDCDC;
+    border-radius:10px;
+  
+  }
+  &__btn{
+    background: #0075FF;
+    border-radius: 13px;
+    padding:30px;
+  }
+  &__text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142.5%;
+    color: rgba(0, 0, 0, 0.33);
+    padding:28px;
+    padding-left: 32px;
+  }
+  &__table{
+    margin-top: 34px;
+  }
+}
