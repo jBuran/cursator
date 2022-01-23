@@ -2,7 +2,16 @@
 
 @import "./components/zero";
 @import "./mixins/mixins";
+@import "./section/direction";
 
 body {
     font-family: "Montserrat", sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+} 
+.title{
+    font-size: 28px;
 }
