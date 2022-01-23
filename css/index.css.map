@@ -1,6 +1,10 @@
 {
     "version": 3,
+<<<<<<< HEAD
     "mappings": "AAAA,OAAO,CAAC,4FAAI;AAGZ,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;CACxC",
+=======
+    "mappings": "AAAA,OAAO,CAAC,4FAAI;AAEZ,AAAA,IAAI,CAAC;EACF,WAAW,EAAE,wBAAwB;CACvC;;AACD,AAAA,UAAU,CAAA;EACP,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,MAAM;CACjB",
+>>>>>>> ce16f133f6d26b6f755a18e77b4b4339a4f94d8a
     "sources": [
         "../scss/index.scss",
         "../scss/mixins/_mixins.scss"
