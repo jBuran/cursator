@@ -1,0 +1,29 @@
+.header {
+   &__content {
+      margin-top: 38px;
+      padding-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__list {
+      display: flex;
+align-items: center;
+      :last-child {
+         margin-right: 0;
+      }
+   }
+   &__item {
+      margin-right: 43px;
+      a {
+         display: inline-block;
+         @include font(16px, 400);
+      }
+   }
+   &-activ {
+      border: 1px solid #0075ff;
+      box-sizing: border-box;
+      border-radius: 70px;
+      padding: 14px 32px;
+   }
+}
