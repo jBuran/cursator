@@ -1,4 +1,124 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 107px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 33px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 33px;
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 142.5%;
+  color: #000000;
+}
+
+.footer__up-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 142.5%;
+  color: #000000;
+}
+
+.footer__up-img {
+  margin-left: 9px;
+}
+
+.footer__last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__last-link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 142.5%;
+  color: #000000;
+}
+
+.footer__last-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 142.5%;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__last-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 142.5%;
+  color: #000000;
+}
+
+.footer__last-link:not(:last-child) {
+  margin-right: 46px;
+}
+
+.footer__last {
+  padding-bottom: 35px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -168,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
 }
 
 .header__list :last-child {
@@ -377,6 +498,70 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 
+.header {
+  color: #000;
+}
+
+.header__content {
+  margin-top: 38px;
+  padding-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+}
+
+.header__list :last-child {
+  margin-right: 0;
+}
+
+.header__item {
+  margin-right: 43px;
+}
+
+.header__item a {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  line-height: 150%;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+
+.header-activ {
+  border: 1px solid #0075ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 70px;
+  padding: 14px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-activ a {
+  margin-right: 8px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -389,5 +574,12 @@ body {
 
 .col-6 {
   width: 50%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 /*# sourceMappingURL=index.css.map */
