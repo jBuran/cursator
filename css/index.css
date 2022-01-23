@@ -27,6 +27,15 @@
   margin-top: 37px;
 }
 
+.salary__name-first {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 68px;
+  color: #000000;
+}
+
 .salary__name {
   font-family: Montserrat;
   font-style: normal;
@@ -34,6 +43,7 @@
   font-size: 18px;
   line-height: 140.9%;
   color: #000000;
+  padding-left: 33px;
 }
 
 .salary__vacancy {
@@ -64,6 +74,117 @@
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.faculty__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 68px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.faculty__title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #DCDCDC;
+  padding-bottom: 54px;
+}
+
+.faculty__list:not(:last-child) {
+  display: flex;
+  align-items: center;
+}
+
+.faculty__link {
+  background-color: rgba(67, 197, 158, 0.11);
+  border-radius: 24px;
+  padding: 12px 20px 14px 21px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #43C59E;
+  margin-right: 23px;
+}
+
+.faculty__text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty__text {
+  margin-bottom: 16px;
+}
+
+.faculty__img {
+  margin-right: 14px;
+}
+
+.faculty__main-wrap {
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 61px;
+  border-bottom: 1px solid #DCDCDC;
+}
+
+.faculty__bold {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.faculty__light {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.faculty__main-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty__btn {
+  background: #0075FF;
+  border-radius: 13px;
+  padding: 21px 75px;
+}
+
+.faculty__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faculty__box {
+  max-width: 600px;
+}
+
+.faculty__rating-items {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 140px;
+}
+
+.faculty__btn-link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 
 .footer__wrap {
