@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,4FAAI;AAEZ,AAAA,IAAI,CAAC;EACF,WAAW,EAAE,wBAAwB;CACvC",
+    "mappings": "AAAA,OAAO,CAAC,4FAAI;AAGZ,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,wBAAwB;CACxC",
     "sources": [
-        "../scss/index.scss"
+        "../scss/index.scss",
+        "../scss/mixins/_mixins.scss"
     ],
     "names": [],
     "file": "index.css"
