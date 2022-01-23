@@ -10,7 +10,7 @@
    &__list {
       display: flex;
       align-items: center;
-align-items: center;
+      align-items: center;
       :last-child {
          margin-right: 0;
       }
@@ -32,6 +32,21 @@ align-items: center;
       align-items: center;
       a {
          margin-right: 8px;
+      }
+   }
+   &__nav-link {
+      margin-top: 20px;
+      max-width: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+         font-family: Montserrat;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 142.5%;
+         color: #0075ff;
       }
    }
 }
