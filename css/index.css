@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -8,4 +13,3 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-/*# sourceMappingURL=index.css.map */
